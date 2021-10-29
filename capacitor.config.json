@@ -1,0 +1,8 @@
+{
+  "appId": "Scaner.Cedula.raxielh",
+  "appName": "Scaner-Cedula",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "cordova": {}
+}

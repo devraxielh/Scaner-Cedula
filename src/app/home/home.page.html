@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title><ion-icon name="videocam"></ion-icon> Scaner de cedula</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h4>Desarrollado por @dev.raxielh</h4>
+  <div class="container">
+    <div class="cedula" *ngIf="estado_cedula_img">
+      <img src="assets/img/cedula.png" alt="">
+    </div>
+    <div>
+      <ion-card *ngIf="estado_cedula_card">
+        <img src="assets/img/cedula.png" />
+        <ion-card-header>
+          <ion-card-subtitle>Codigo de cedula colombiana de:</ion-card-subtitle>
+          <ion-card-title>{{ firstName1 }} {{ middleName }} {{ lastName1 }} {{ lastName2 }}</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-list>
+            <ion-item>
+              <ion-label><ion-icon name="id-card"></ion-icon> Cedula: {{ idNumber }}</ion-label>
+            </ion-item>
+            <ion-item>
+              <ion-label><ion-icon name="male-female"></ion-icon> Genero: {{ gender }}</ion-label>
+            </ion-item>
+            <ion-item>
+              <ion-label><ion-icon name="calendar"></ion-icon> Fecha de nacimiento: {{ birthDate }}</ion-label>
+            </ion-item>
+            <ion-item>
+              <ion-label><ion-icon name="flask"></ion-icon> Tipo de sangre: {{ bloodType }}</ion-label>
+            </ion-item>
+          </ion-list>
+        </ion-card-content>
+      </ion-card>
+    </div>
+    <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+      <ion-fab-button (click)="scanBarcodeScanner()" color="warning">
+        <ion-icon name="camera"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+  </div>
+</ion-content>

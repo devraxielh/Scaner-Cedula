@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Scaner-Cedula</string>
+    <string name="title_activity_main">Scaner-Cedula</string>
+    <string name="package_name">Scaner.Cedula.raxielh</string>
+    <string name="custom_url_scheme">Scaner.Cedula.raxielh</string>
+</resources>
